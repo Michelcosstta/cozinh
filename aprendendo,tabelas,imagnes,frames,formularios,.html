@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo tabelas,imagens,frames,formularios.</title>
+</head>
+<body>
+    
+ 
+<h1>a tag tr cria uma linha a tag td cria uma celula e a</h1>
+   
+    <table border="1">                                                            <!--  tag table cria uma tabela  -->
+       
+       
+    
+<tr>                                                                         <!-- a tag tr cria uma linha-->
+          <td>michel</td>
+          <td>38 anos</td>                                                        <!-- a tag td cria uma célula -->
+          <td>full stallk</td>
+    </tr>
+    
+    <tr>
+         <td>mateus</td>
+         <td> 2 anos</td>
+         <td>Deus proverá</td>
+    </tr>
+    
+
+    <tr>
+        <td>josyane</td>
+         <td>35  anos</td>
+         <td>tecnica patologista</td>
+    </tr>
+
+
+    <td>valentina</td>
+         <td>4 anos</td>
+         <td>Deus proverá</td>
+    </tr>
+
+    </tr>
+     </table>
+                                  
+    </table>
+    <br>
+<h1>tag th deicha a letra em destaque </h1>
+    <table border="1">
+        <tr>
+            <th>michel</th>                                               
+            <th>38 anos</th>
+            <th>full stallk</th>
+        </tr>
+        <tr>
+            <td>josyano</td>
+            <td>35 anos</td>
+            <td>tecnica  em patologia</td>
+        </tr>
+        <tr>
+            <td>valentina </td>
+            <td>4 anos </td>
+            <td>Deus provrá para si uma médica </td>
+
+            <tr>
+             <td>mateus</td>
+             <td>2 anos</td>
+             <td>Deus proverá para si um pastor</td>
+
+
+            </tr>
+        </tr>
+    </table>
+
+<br>
+<h1>tag th deicha a letra em destaque </h1>
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>titulo 1</th>                                                     <!--tag th deicha a letra em destaque  -->
+            <th>titulo 2</th>
+            <th>titulo 3</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Body1 linha1</td>
+            <td>Body2 linha1</td>
+            <td>Body3 linha1</td>
+        </tr>
+        <tr>
+            <td>Body1 linha2</td>
+            <td>Body2 linha2</td>
+            <td>Body3 linha2</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <td>Foot 1</td>
+            <td>Foot 2</td>
+            <td>Foot 3</td>
+        </tfoot>
+     </table>
+     
+<br>
+<h1>&nbsp cria uma celula vazia</h1>
+     <table>
+        <tr>
+            <th>&nbsp;</th>                                                  <!-- a tg &nbsp; cria uma célula vazia -->
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>Item 1</td>
+            <td>R$10,00</td>
+        </tr>
+        <tr>
+            <td>Item 2</td>
+            <td>R$20,00</td>
+        </tr>
+    </table>
+<br>
+
+<h1>colspan</h1>
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <th colspan="2">Telefones</th>                                        <!--a tag colspan vai fazer uma mesclagem de colunas,  -->
+    </tr>
+    <tr>
+        <td>Ted</td>
+        <td>8888-8888</td>
+        <td>9999-9999</td>
+    </tr>
+    <tr>
+        <td>Junior</td>
+        <td>1111-1111</td>
+        <td>2222-2222</td>
+    </tr>
+</table>
+
+<br>
+
+<h1>rowspan</h1>
+<table border="1">
+    <tr>
+      <th>Primeiro Nome:</th>
+      <td>Ted</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Telefone:</th>                                             <!-- a tag rowspan vai mesclar linhas  -->
+      <td>8888-8888</td>
+    </tr>
+    <tr>
+      <td>9999-9999</td>
+    </tr>
+    </table>
+
+<br>
+
+<h1>caption não será composta por células, portanto ficará acima da tabela, como um título.</h1>
+
+<table border="1">
+    <caption>Exemplo de Título</caption>  <!-- <caption> não será composta por células, portanto ficará acima da tabela, como um título. -->
+    <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+    </tr>
+    <tr>
+        <td>Ted</td>
+        <td>Junior</td>
+    </tr>
+    <tr>
+        <td>Ted</td>
+        <td>Neto</td>
+    </tr>
+</table>
+
+<br>
+
+
+<style>                                                           
+    .vermelho{
+        background-color: red;
+    }
+    .amarelo{
+        background-color: yellow;
+    }
+    .azul{
+        background-color: blue;
+    }
+    
+</style>
+
+<table border="1">
+  <colgroup>                                                         <!--col group serve para definir a cor de cada coluna  --> 
+    <col class="vermelho">
+    <col class="amarelo">                                                      
+    <col class="azul">
+  </colgroup>
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>Profissao</th>
+  </tr>
+  <tr>
+    <td>Ted</td>
+    <td>22</td>
+    <td>Estudante</td>
+  </tr>
+  <tr>
+    <td>Junior</td>
+    <td>26</td>
+    <td>Escritor</td>
+  </tr>
+</table>
+<br>
+<table border="1">
+    <colgroup>
+      <col span="2" style="background-color:red">
+      <col style="background-color:yellow">
+    </colgroup>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Profissao</th>
+    </tr>
+    <tr>
+      <td>Ted</td>
+      <td>22</td>
+      <td>Estudante</td>
+    </tr>
+    <tr>
+      <td>Junior</td>
+      <td>26</td>
+      <td>Escritor</td>
+    </tr>
+  </table>
+
+  <br>
+
+  
+
+
+
+
+
+
+</body>
+</html>
