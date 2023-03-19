@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom java script</title>
+
+
+
+
+<style>
+    div#area{
+       background: green
+       color: white
+       width: 200px ;
+       height: 200px ;
+       line height: 200px;
+       text align: center ;
+
+
+
+
+    }
+body{ 
+    background-color: white;
+    color: rgb(158, 114, 1);
+    fonte : normal 40 pt arial;
+
+    
+}  
+</style>
+
+</head>
+
+<body>
+
+    <h1>iniciando dom </h1>
+    <p> aqui vai o resultado </p>
+    <p>aprendendo a usar o dom</p>
+    <div  id="msg" >clic em mim </div>
+
+
+
+
+    
+    
+
+
+
+
+
+<script>
+/*  o que é dom . DOCUMENT OBJECT MODEL É um modelo ou conjunto de objetos para documentos que vai te dar acesso aos componentes internos do wibe site. */
+
+/* ARVORE DOM. ela  começa da raiz essa raiz se chama janela  ou window dentro do window existem varios objetos como por exemplo:
+
+                                            window
+                                            
+
+               location                    document,                      history
+                                              |
+                                              |
+                                              |
+                                             HTML ---- ( o html são parente de HEAD e BODY e ambos são filhos de HTML, e HTML é filho de DOCUMENT)
+                                             /  \
+                                            /    \
+                                        HEAD      BODY
+                                       / |  \       \
+                                      /  |   \       \
+                                   META TITLE LINK    \  ____________ H1 2 3... ,color,background-color,vlink, div, class, p, br, 
+                                    /    |     \
+                                   /     |      \
+                                SCRIPT  STYLE  BASE
+                                      
+                                      
+         
+                                
+                                                          selecinando elemento para navegar em dom
+
+metodos de acesso ou tecnicas :
+
+por marca : getElemenstBy tagName()
+
+por ID : getElemenstById()    OBS : quando se tem mais de um elemento para se procurar se coloca {} para procurar
+
+por nome : getElemenstByName()
+
+por classe : getElemenstByClassName()
+
+por seletor : querySeletor() é a forma mais nova no lugar de todos outros metodos de acesso 
+              querySeletorAll() esse é no plural
+
+
+
+
+*/                                     
+
+window.document.write(p1.innertext) /* innertext pega o conteudo do paragrafo 0 sem formatação das filhas  */
+
+window.document.write(p1.innerHTML) /* pega o conteudo do paragrafo 0 com a formatçao original da filha  */
+
+var corpo = window.document.body  /* eu posso mudar fonte e cor da letra dessa forma tambem*/
+
+d.style.background = 'green'
+
+p1.style.color = 'white'
+
+
+var p1 = window.document.getElementsByTagName('p'){1} /* a tag getElementsBytagName ela seleciona o documento que esta entre colchetes */
+
+var d = window.document.getElementById('msg')
+
+var d =window.document.querySelector('div#msg') /* a forma mais nova do metodo de acesso toda div e representada por uma # e toda class por um .*/
+
+d.style.background = 'green'
+
+
+/*   <!-- EVENTOS DOM -->
+
+                                                  <!-- funções  
+                                                function {  
+
+                                                       isso se chama um bloco tudo que colocar entre chaves e esse bloco tem que se nomear ele com uma function
+
+                                                  } */
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<div id  ='area'>
+
+interaja....
+
+</div>
+
+
+                                                              
+var a = window.document.getElementById('area')
+
+a.addEventListener('click',clicar)
+a.addEventListener('mouseenter',entrar)          
+a.addEventListener('mouseout',sair)
+
+
+
+function clicar() {
+
+    a.innertext = 'clicou!'
+}   a.style.background ='red'
+
+function entrar() {
+    a.innertext = 'entrou!'
+}
+
+function sair() {
+    a.innertext
+}   a.style.background = 'green'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
